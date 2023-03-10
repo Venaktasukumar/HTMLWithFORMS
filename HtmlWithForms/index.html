@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>FORM</title>
+    </head>
+    <body>
+            <form id="form">
+                <h1>PERSONAL DETAILS</h1>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="firstname" name="fname"  placeholder="Enter your firstName" onfocus="focuss(this)" onchange="transform()"><br><br>
+                <label for="lname">Last Name :</label><br>
+                <input type="text" id="lastname" name="lname" placeholder="Enter your LastName" onfocus="focuss(this)" onchange="transform()"><br><br>
+                <label for="DateofBirth">DateOfBirth :</label><br>
+                <input type="date" id="DOB" name="DateofBirth" placeholder="Enter your DateOfBirth" onfocus="focuss(this)"><br><br>
+                <label for="phone">Phone No :</label><br>
+                <input type="text" id="phoneno" name="phone" placeholder="Enter your PhoneNo" onfocus="focuss(this)"><br><br>
+                <label for="Eemail">Email :</label><br>
+                <input type="email" id="EMail" name="Eemail" placeholder="Enter your Email" onfocus="focuss(this)"><br><br>
+                <input type="submit" onclick="add()" value="Submit" >
+            </form>
+            <table>
+                <caption id="caption">Added details</caption>
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>LastName</th>
+                        <th>DateofBirth</th>
+                        <th>phoneNo</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <tbody id="mytbody">
+                </tbody>
+            </table>
+        <script src="javascript.js"></script>
+    </body>
+</html>
