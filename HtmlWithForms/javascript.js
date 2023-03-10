@@ -41,7 +41,7 @@ let reset = () =>{
     Email.value="";
 }
 let validateform = () =>{
-    if(firstname.value=="" || !(firstname.value.match(/[A-Za-z]+$/)) || lastname.value=="" || !( lastname.value.match(/[A-Za-z]+$/)) || DOB.value=="" || phoneno.value=="" || !(phoneno.value.match(/^[0-9]\d{9}$/)) || Email.value==""){
+    if(firstname.value=="" || !(firstname.value.match(/^[A-Za-z]+$/)) || lastname.value=="" || !( lastname.value.match(/^[A-Za-z]+$/)) || DOB.value=="" || phoneno.value=="" || !(phoneno.value.match(/^\d+$/)) || (phoneno.value.length!=10) ||Email.value==""){
         return "not valid";
     }
     return "valid";  
